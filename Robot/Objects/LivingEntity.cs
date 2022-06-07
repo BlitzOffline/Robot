@@ -1,5 +1,8 @@
 ﻿namespace Robot.Objects;
 
+/**
+ * Represents an entity that can be alive and has health.
+ */
 public abstract class LivingEntity : IEntity
 {
     public int MaxHealth { get; }

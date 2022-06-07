@@ -1,4 +1,4 @@
-﻿namespace Robot.Objects;
+﻿namespace Robot.Objects.Animals;
 
 public class Animal : LivingEntity
 {

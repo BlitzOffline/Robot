@@ -1,5 +1,6 @@
 ﻿using System;
-using Robot.Objects;
+using Robot.Objects.Animals;
+using Robot.Objects.Humans;
 using Robot.Planets;
 using Robot.Robots;
 

@@ -1,4 +1,4 @@
-﻿namespace Robot.Objects;
+﻿namespace Robot.Objects.Humans;
 
 public class Human : LivingEntity
 {

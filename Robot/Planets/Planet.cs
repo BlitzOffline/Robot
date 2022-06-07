@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Robot.Objects;
+using Robot.Objects.Animals;
+using Robot.Objects.Humans;
 
 namespace Robot.Planets;
 
@@ -42,7 +44,13 @@ public class Planet : IPlanet
             new Human("Alexandra", 20, 72),
             new Human("Ruben", 20, 20),
             new Human("Mihai", 20, 12),
-            new SuperHero("Batman", 30, 40),
+            new SuperHero("Superman", 30, 40, new List<SuperPower>
+            {
+                SuperPower.Flight,
+                SuperPower.Invincibility,
+                SuperPower.Strength,
+                SuperPower.Speed
+            }),
             new Animal(AnimalType.Elephant, 40),
             new Animal(AnimalType.Lion, 30),
             new Animal(AnimalType.Donkey, 10)
