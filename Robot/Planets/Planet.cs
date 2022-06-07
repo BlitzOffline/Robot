@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Robot.Objects;
 
@@ -7,9 +6,9 @@ namespace Robot.Planets;
 
 public class Planet : IPlanet
 {
-    public static Planet Venus = new Planet("Venus", new HashSet<IEntity>());
-    public static Planet Earth = new Planet("Earth", CreateEarthEntities());
-    public static Planet Mars = new Planet("Mars", new HashSet<IEntity>());
+    public static readonly Planet Venus = new Planet("Venus", new HashSet<IEntity>());
+    public static readonly Planet Earth = new Planet("Earth", CreateEarthEntities());
+    public static readonly Planet Mars = new Planet("Mars", new HashSet<IEntity>());
 
     public string Name { get; }
     public HashSet<IEntity> Entities { get; }
@@ -25,9 +24,9 @@ public class Planet : IPlanet
         return Entities.OfType<LivingEntity>().Any();
     }
 
-    public void RemoveEntity(IEntity entity)
+    public bool RemoveEntity(IEntity entity)
     {
-        Entities.Remove(entity);
+        return Entities.Remove(entity);
     }
 
     public override string ToString()
