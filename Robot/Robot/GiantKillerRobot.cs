@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Robot.Objects;
+using Robot.Object;
 
-namespace Robot.Robots;
+namespace Robot.Robot;
 
 public class GiantKillerRobot : Robot
 {
     public Intensity EyeLaserIntensity { get; set; }
-    public LivingEntity CurrentTarget { get; set; }
+    public LivingEntity CurrentTarget { get; protected set; }
     public IList<Type> TargetTypes { get; }
     
     public GiantKillerRobot()

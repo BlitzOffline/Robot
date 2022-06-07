@@ -1,6 +1,6 @@
-﻿using Robot.Objects;
+﻿using Robot.Object;
 
-namespace Robot.Robots;
+namespace Robot.Robot;
 
 /**
  * Represents a robot.

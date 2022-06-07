@@ -1,4 +1,4 @@
-﻿namespace Robot.Objects.Humans;
+﻿namespace Robot.Object.Human;
 
 public enum SuperPower
 {

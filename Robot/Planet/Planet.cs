@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Robot.Objects;
-using Robot.Objects.Animals;
-using Robot.Objects.Humans;
+using Robot.Object;
+using Robot.Object.Animal;
+using Robot.Object.Human;
 
-namespace Robot.Planets;
+namespace Robot.Planet;
 
 public class Planet : IPlanet
 {
-    public static readonly Planet Venus = new Planet("Venus", new HashSet<IEntity>());
-    public static readonly Planet Earth = new Planet("Earth", CreateEarthEntities());
-    public static readonly Planet Mars = new Planet("Mars", new HashSet<IEntity>());
+    public static readonly Planet Venus = new("Venus", new HashSet<IEntity>());
+    public static readonly Planet Earth = new("Earth", CreateEarthEntities());
+    public static readonly Planet Mars = new("Mars", new HashSet<IEntity>());
 
     public string Name { get; }
     public HashSet<IEntity> Entities { get; }

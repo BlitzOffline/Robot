@@ -1,11 +1,9 @@
-﻿using Robot.Planets;
-
-namespace Robot.Robots;
+﻿namespace Robot.Robot;
 
 public class Robot : IRobot
 {
-    public Planet Planet { get; set; }
-    public bool Active { get; private set; }
+    public Planet.Planet Planet { get; set; }
+    public bool Active { get; protected set; }
 
     public void Initialize()
     {

@@ -1,4 +1,4 @@
-﻿namespace Robot.Objects;
+﻿namespace Robot.Object;
 
 /**
  * Represents an entity that can be alive and has health.

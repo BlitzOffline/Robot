@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Robot.Objects.Humans;
+namespace Robot.Object.Human;
 
 public class SuperHero : Human
 {

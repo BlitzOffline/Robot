@@ -1,4 +1,4 @@
-﻿namespace Robot.Robots;
+﻿namespace Robot.Robot;
 
 public enum Intensity
 {
